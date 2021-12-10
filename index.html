@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="/assets/jquery.js"></script>
+  <title>Gianni's</title>
+ </head>
+ <body>
+  <nav>
+   <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+  </nav>
+  <header id="Home">
+   <h1>Gianni's restaurant</h1>
+   <h2>Authentic Italian Food</h2>
+  </header>
+  <div class="parent">
+   <div class="first child" id="menu">
+    <p>
+     RAVIOLI
+     <span class="price">$20</span>
+     <br />
+     <small>
+      Ravioli stuffed with ricotta cheese, marinara sauce on top Lorem, ipsum
+      dolor sit amet consectetur adipisicing elit. Ipsam ex eligendi dolore esse
+      ducimus fugit repudiandae non dignissimos tenetur, molestias odio
+      temporibus. Sunt voluptas asperiores maxime eos necessitatibus atque
+      saepe!
+     </small>
+    </p>
+   </div>
+
+   <div class="second child">
+    <p>
+     SPAGHETTI MEATBALL
+     <span class="price">$25</span>
+     <br />
+     <small>
+      Spaghetti marinara served with two meatballs Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Impedit illum architecto fuga, facilis
+      distinctio totam. Provident itaque in, accusantium rerum blanditiis vel
+      quaerat earum sunt, facilis doloremque tempora, autem officia.
+     </small>
+    </p>
+   </div>
+
+   <div class="dessert child">
+    <p>
+     LINGUINE VONGOLE
+     <span class="price">$30</span>
+     <br />
+     <small>
+      Fresh clams over linguine in a white wine Lorem ipsum, dolor sit amet
+      consectetur adipisicing elit. Aliquam optio laudantium dolore soluta
+      blanditiis sequi sed, veritatis dolor! Laborum dolor harum eligendi
+      perferendis laboriosam magni. Laudantium nobis dolores voluptatibus
+      reprehenderit.
+     </small>
+    </p>
+   </div>
+  </div>
+  <!--FORM-->
+  <div class="form-container" id="contact">
+   <form id="survey-form">
+    <div class="form-group">
+     <label id="name-label" for="name">Name</label>
+     <input
+      type="text"
+      name="name"
+      id="name"
+      class="form-control"
+      placeholder="Enter your Name"
+      required
+     />
+    </div>
+    <div class="form-group">
+     <label id="email-label" for="email">Email</label>
+     <input
+      type="email"
+      name="email"
+      id="email"
+      class="form-control"
+      placeholder="Enter your Email"
+      required
+     />
+    </div>
+    <div class="form-group">
+     <label for="comment">Comment</label>
+     <textarea
+      id="comments"
+      class="input-textarea"
+      name="comment"
+      placeholder="Enter your comment here..."
+     ></textarea>
+     <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+   </form>
+  </div>
+
+  <script>
+   $('div').on('click', function () {
+    $(this).toggleClass('show-description');
+   });
+  </script>
+ </body>
+</html>
